@@ -1,0 +1,114 @@
+/* variables */
+:root {
+    --bg: #FCFBFA;
+    --text-color: #1F1E1C;
+    --nav-color: #000000;
+}
+
+/* base */
+
+html,
+body {
+    width: 144rem;
+    min-width: 144rem;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Lora", serif;
+    font-size: 10px;
+    line-height: 150%;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+    background-color: var(--bg);
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Сетки */
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8rem 1fr 8rem;
+}
+
+.container {
+    min-width: 124rem;
+    margin: 0 auto;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+/* Header */
+
+.header__wrap {
+    display: grid;
+    grid-template-columns: 14.5rem 1fr;
+    grid-template-rows: 1fr;
+
+    padding-top: 3.1rem;
+    padding-bottom: 3rem;
+}
+
+.logo {
+    display: flex;
+    max-width: 14.4rem;
+    flex-shrink: 0;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.nav-list__item {
+    display: flex;
+}
+
+.nav-list__item:not(:last-child) {
+    margin-left: 3rem;
+}
+
+.nav-list__link {
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--nav-color);
+}
