@@ -1,11 +1,12 @@
-/* variables */
+/* Переменные */
+
 :root {
     --bg: #FCFBFA;
     --text-color: #1F1E1C;
     --nav-color: #000000;
 }
 
-/* base */
+/* Базовые стили */
 
 html,
 body {
@@ -76,7 +77,7 @@ a {
     padding-right: 10rem;
 }
 
-/* Header */
+/* Хедер */
 
 .header {
     border-bottom: 0.1rem solid rgba(31, 30, 28, 0.2);
@@ -131,8 +132,6 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 70px 50px;
 }
-
-/* Content */
 
 .article__header {
     grid-column: 1 / -1;
@@ -226,7 +225,7 @@ figcaption p:not(:last-child) {
     margin-top: 0;
 }
 
-/* Footer */
+/* Футер */
 
 .footer {
     margin-top: 5rem;
