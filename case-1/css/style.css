@@ -11,9 +11,10 @@ html,
 body {
     width: 100%;
     min-width: 144rem;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 0;
-    font-family: "Lora", serif;
+    font-family: "Lora", "Palatino Linotype", serif;
     font-size: 10px;
     line-height: 150%;
     font-weight: 400;
@@ -65,7 +66,7 @@ a {
 .page {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 8rem 1fr 8rem;
+    grid-template-rows: auto 1fr auto;
 }
 
 .container {
@@ -82,15 +83,10 @@ a {
 }
 
 .header__wrap {
-    /* display: grid;
+    display: grid;
     grid-template-columns: 14.5rem 1fr;
     grid-template-rows: 1fr;
-     */
-
-    display: grid;
-    grid-template-columns: repeat(3, 38rem);
-    grid-column-gap: 5rem;
-    grid-template-rows: 1fr;
+    column-gap: 5rem;
 
     padding-top: 3.1rem;
     padding-bottom: 3rem;
@@ -104,15 +100,14 @@ a {
 }
 
 .main-nav {
-    grid-column: 2 / 4; 
+    grid-column: -1 / span 1; 
 }
 
 .nav-list {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    justify-self: end;
     flex-wrap: wrap;
-    align-self: end;
 }
 
 .nav-list__item {
@@ -133,23 +128,22 @@ a {
 
 .article {
     display: grid;
-    grid-template-columns: repeat(3, 38rem);
-    grid-column-gap: 5rem;
-    grid-template-rows: auto repeat(4, auto);
-    grid-row-gap: 7rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px 50px;
 }
 
 /* Content */
 
 .article__header {
     grid-column: 1 / -1;
-    grid-row: 1 / 3;
+    justify-self: center;
 
+    max-width: 75%;
+    margin-bottom: -2rem;
     padding-top: 7rem;
 }
 
 .article__title {
-    max-width: 86rem;
     margin: 0 auto;
     margin-bottom: 3rem;
 
@@ -159,10 +153,10 @@ a {
 }
 
 .article__info {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
 
     font-size: 1.8rem;
     line-height: 150%;
@@ -170,17 +164,18 @@ a {
 
 .article__author {
     margin: 0;
-    margin-left: 5rem;
 }
 
 .article__photographer {
     margin: 0;
-    margin-left: 5rem;
 }
 
 .article__poster {
-    display: flex;
-    flex-shrink: 0;
+    grid-column: span 3;
+}
+
+.article__poster img {
+    display: block;
 }
 
 /* Модули */
@@ -189,7 +184,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 38rem);
     grid-column: 1 / -1;
-    grid-column-gap: 5rem;
+    column-gap: 5rem;
 }
 
 .article__text {
@@ -202,6 +197,11 @@ figure {
     margin: 0;
 }
 
+figcaption {
+    margin-top: 3rem;
+}
+
+
 figcaption p {
     margin: 0;
     font-size: 1.6rem;
@@ -212,24 +212,18 @@ figcaption p:not(:last-child) {
     margin-bottom: 0.5rem;
 }
 
-/* Module text-img-caption */
-    
-.text-img-caption figure {
+.article_img--wide {
+    grid-column: span 2;
+}
+
+.article_img--horizontal {
     display: grid;
-    grid-template-columns: repeat(2, 38rem);
-    grid-column-gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
 }
 
-/* Module text-img */
-
-.text-img figure {
-    grid-column: 2 / -1;
-}
-
-/* Module img-img */
-
-.img-img figure:first-child {
-    grid-column: 1 / 3;
+.article_img--horizontal figcaption {
+    margin-top: 0;
 }
 
 /* Footer */
@@ -241,19 +235,18 @@ figcaption p:not(:last-child) {
 
 .footer__wrap {
     display: grid;
-    /* grid-template-columns: 14.5rem 1fr; */
-    grid-template-columns: repeat(3, 38rem);
-    grid-column-gap: 5rem;
-    grid-template-rows: 1fr;
+    grid-template-columns: 14.5rem 1fr;
+    column-gap: 5rem;
+    align-items: center;
 
     padding-top: 3.1rem;
     padding-bottom: 3.1rem;
 }
 
 .copyright {
-    grid-column: -1 / -2;
+    justify-self: end;
     margin: 0;
+
     font-size: 1.4rem;
     align-self: end;
-    margin-left: auto;
 }
