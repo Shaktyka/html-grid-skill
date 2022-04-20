@@ -64,6 +64,40 @@ a {
     overflow: hidden;
 }
 
+/* Кнопки */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    border: none;
+    cursor: pointer;
+}
+
+.button--colored {
+    padding: 1.1rem 5.5rem 1.3rem;
+    background-color: #59313B;
+
+    font-family: 'Source Sans Pro';
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #FAFAFA;
+}
+
+.button--bordered {
+    padding: 2.4rem;
+
+    font-family: 'Source Sans Pro';
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #40393B;
+
+    background-color: transparent;
+    border: 0.1rem solid #40393B;
+}
+
 /* Сетки */
 
 .catalog {
@@ -91,9 +125,82 @@ a {
 
 /* Список карточек */
 
+.products__list {
+    display: grid;
+    grid-template-columns: repeat(3, 38rem);
+    column-gap: 5rem;
+    row-gap: 5rem;
+}
+
+/* Карточка */
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 3rem;
+    background-color: #FAFAFA;
+}
+
+.product__title {
+    margin: 0;
+    margin-bottom: 0.5rem;
+
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    color: #40393B;
+}
+
+.product__img-wrap {
+    display: flex;
+    order: -1;
+    max-width: 32rem;
+    height: 27rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.product__img {
+    width: 32rem;
+    height: auto;
+}
+
+.product__price {
+    margin: 0;
+
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: #40393B;
+}
+
+.more {
+    display: grid;
+    justify-content: center;
+}
+
+.product__buy-button-wrap {
+    margin-top: 2rem;
+}
+
+/* Кнопка "Больше" */
+
+.products__more {
+    margin-top: 7rem;
+}
+
+.more__link {
+    min-width: 38rem;
+}
+
 /* Футер */
 
 .footer {
+    margin-top: 8rem;
     padding-top: 8rem;
     padding-bottom: 8rem;
     background-color: var(--gray);
