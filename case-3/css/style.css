@@ -121,7 +121,40 @@ a {
     display: flex;
 }
 
+/* Промо-блок */
+
+.hero {
+    display: flex;
+    min-height: 35rem;
+    background-image: url("../img/back.jpeg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    padding: 13.6rem 11rem;
+}
+
+.hero__title {
+    margin: 0;
+    font-family: 'Merriweather';
+    font-weight: 300;
+    font-size: 6.2rem;
+    line-height: 7.8rem;
+    color: #59313B;
+}
+
 /* Фильтры */
+
+.filter {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.filter__form {
+    display: grid;
+    grid-template-columns: repeat(3, 38rem);
+    column-gap: 5rem;
+}
 
 /* Список карточек */
 
