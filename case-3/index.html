@@ -51,8 +51,31 @@
             <section class="hero">
                 <h1 class="hero__title">Каталог</h1>
             </section>
-            <!-- Фильтры -->
             <section class="products">
+                <!-- Фильтр -->
+                <div class="filter products__filter">
+                    <form class="form filter__form" action="#">
+                        <select class="form__input" name="category" id="filter-category">
+                            <option disabled selected>Категория</option>
+                            <option value="1">Категория 1</option>
+                            <option value="2">Категория 2</option>
+                            <option value="3">Категория 3</option>
+                        </select>
+                        <select class="form__input" name="flowers" id="filter-flowers">
+                            <option disabled selected>Цветы</option>
+                            <option value="1">Цветок 1</option>
+                            <option value="2">Цветок 2</option>
+                            <option value="3">Цветок 3</option>
+                        </select>
+                        <select class="form__input" name="price" id="filter-price">
+                            <option disabled selected>Цена</option>
+                            <option value="1">1000</option>
+                            <option value="2">2000</option>
+                            <option value="3">3000</option>
+                        </select>
+                    </form>
+                </div>
+                <!-- Список карточек -->
                 <ul class="list products__list">
                     <!-- 1 - 3 -->
                     <li class="products__item product">
