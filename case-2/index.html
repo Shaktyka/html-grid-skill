@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-    <title>Travelers Blog</title>
+    <title>Главная страница сайта Traveler's blog</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-    <header class="header">
-        <div class="container">
+    <div class="container">
+        <header class="header">
             <nav class="main-nav">
                 <a href="/" class="logo">
                     <img class="logo__img" src="img/logo.svg" width="225" height="18" alt="Логотип блога Travelers">
@@ -37,38 +37,33 @@
                     </li>
                 </ul>
             </nav>
-            <!-- Lead -->
-            <section class="lead">
-                <div class="lead__intro">
-                    <h1 class="lead__title">«Жизнь во время путешествия – это мечта в чистом виде»</h1>
-                    <b class="lead__summary">
+        </header>
+        <main class="main">
+            <article class="article">
+                <header class="article__header">
+                    <h1 class="article__title">«Жизнь во время путешествия – это мечта в чистом виде»</h1>
+                    <p class="article__summary">
                         Этим летом многим из нас пришлось искать альтернативу привычному отдыху. Фрилансеры 
                         из Уфы Маша Гордеева и Женя Михайлов все лето путешествовали по живописным местам 
                         России на своей машине. Они поделились с нами своими впечатлениями, советами и лайфхаками.
-                    </b>
-                    <p class="article-paragraph">
-                        Мы с ранних лет путешествовали с родителями по России. Это всегда было для нас 
-                        долгожданным событием и всегда доставляло море положительных эмоций. В основном мы 
-                        путешествовали по Краснодарскому краю, по приморским городам. Первые несколько лет мы 
-                        обычно до моря добирались на поезде. Там всегда присутствовала очень комфортная и 
-                        приятная обстановка. Чем ближе подъезжали к южному климату, тем больше менялся пейзаж 
-                        за окном, и тем больше можно было влюбиться в природу края. Но потом начали 
-                        путешествовать на машине, и оказалось, что одни и те же места могут вызывать разные 
-                        впечатления.
                     </p>
-                </div>
-                <figure class="lead__img">
+                </header>
+                <figure class="article__img article__img--header">
                     <img class="img" src="img/1.jpg" width="824" height="761" alt="">
                     <figcaption class="visually-hidden">
                         Путешественники играют на музыкальных инструментах
                     </figcaption>
                 </figure>
-            </section>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container">
-            <article class="article">
+                <p class="article__text">
+                    Мы с ранних лет путешествовали с родителями по России. Это всегда было для нас 
+                    долгожданным событием и всегда доставляло море положительных эмоций. В основном мы 
+                    путешествовали по Краснодарскому краю, по приморским городам. Первые несколько лет мы 
+                    обычно до моря добирались на поезде. Там всегда присутствовала очень комфортная и 
+                    приятная обстановка. Чем ближе подъезжали к южному климату, тем больше менялся пейзаж 
+                    за окном, и тем больше можно было влюбиться в природу края. Но потом начали 
+                    путешествовать на машине, и оказалось, что одни и те же места могут вызывать разные 
+                    впечатления.
+                </p>
                 <p class="article__text">
                     Когда мы планировали поездку, мы сразу подумали о том, что для нас важно. Нам точно 
                     необходим хороший интернет, чтобы иметь возможность работать. Хотелось посетить места 
@@ -145,18 +140,16 @@
                     </figcaption>
                 </figure>
             </article>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
+        </main>
+        <footer class="footer">
             <div class="footer__wrap">
                 <a href="/" class="logo">
-                    <img class="logo__img" src="img/logo.svg" width="225" alt="Логотип блога Travelers">
+                    <img class="logo__img" src="img/logo.svg" width="225" height="18" alt="Логотип блога Travelers">
                     <span class="visually-hidden">На главную</span>
                 </a>
                 <p class="copyright">© 2021 Все права защищены</p>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
