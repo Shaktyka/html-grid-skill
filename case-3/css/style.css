@@ -3,9 +3,9 @@
 :root {
     --bg: #F2F1F0;
     --text-color: #40393B;
-    --brown: #59313B; /* кнопки */
+    --brown: #59313B;
     --light: #FAFAFA;
-    --gray: #DED9D5; /* footer */
+    --gray: #DED9D5;
 }
 
 /* Базовые стили */
@@ -78,12 +78,12 @@ a {
 
 .button--colored {
     padding: 1.1rem 5.5rem 1.3rem;
-    background-color: #59313B;
+    background-color: var(--brown);
 
     font-family: 'Source Sans Pro';
     font-size: 1.6rem;
     line-height: 2rem;
-    color: #FAFAFA;
+    color: var(--light);
 }
 
 .button--bordered {
@@ -92,10 +92,10 @@ a {
     font-family: 'Source Sans Pro';
     font-size: 1.6rem;
     line-height: 2rem;
-    color: #40393B;
+    color: var(--text-color);
 
     background-color: transparent;
-    border: 0.1rem solid #40393B;
+    border: 0.1rem solid var(--text-color);
 }
 
 /* Сетки */
@@ -156,7 +156,7 @@ a {
 .nav-list__link {
     font-size: 1.8rem;
     line-height: 2.3rem;
-    color: #40393B;
+    color: var(--text-color);
 }
 
 .header__group {
@@ -173,7 +173,7 @@ a {
     font-family: 'Source Sans Pro';
     font-size: 1.8rem;
     line-height: 2.3rem;
-    color: #40393B;
+    color: var(--text-color);
 }
 
 .user-nav {
@@ -205,7 +205,7 @@ a {
     font-weight: 300;
     font-size: 6.2rem;
     line-height: 7.8rem;
-    color: #59313B;
+    color: var(--brown);
 }
 
 /* Фильтры */
@@ -219,6 +219,53 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 38rem);
     column-gap: 5rem;
+}
+
+.form__group {
+    position: relative;
+}
+
+.form__input {
+    width: 38rem;
+    height: 5.9rem;
+    background-color: transparent;
+    padding-top: 1.6rem;
+    padding-right: 1.8rem;
+    padding-bottom: 1.8rem;
+    padding-left: 1.8rem;
+
+    border: 0.1rem solid var(--text-color);
+
+    font-family: 'Source Sans Pro';
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: var(--text-color);
+}
+
+.form__input--select {
+    padding-right: 5rem;
+
+    /* for Firefox */
+	-moz-appearance: none;
+	/* for Chrome */
+	-webkit-appearance: none;
+}
+
+.form__input--select::-ms-expand {
+	/* IE */
+	display: none;
+}
+
+.form__group::after {
+    position: absolute;
+    content: "";
+    top: 2.5rem;
+    right: 2.5rem;
+    background-image: url("../img/icons/down.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 1.7rem;
+    height: 1rem;
 }
 
 /* Список карточек */
@@ -238,7 +285,7 @@ a {
     align-items: center;
 
     padding: 3rem;
-    background-color: #FAFAFA;
+    background-color: var(--light);
 }
 
 .product__title {
@@ -249,7 +296,7 @@ a {
     font-weight: 300;
     font-size: 2.2rem;
     line-height: 2.8rem;
-    color: #40393B;
+    color: var(--text-color);
 }
 
 .product__img-wrap {
@@ -273,7 +320,7 @@ a {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.3rem;
-    color: #40393B;
+    color: var(--text-color);
 }
 
 .more {
