@@ -66,7 +66,7 @@ a {
 
 /* Сетки */
 
-.page {
+.catalog {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
 }
@@ -79,8 +79,68 @@ a {
 
 /* Хедер */
 
+.header__wrap {
+
+}
+
+.logo {
+    display: flex;
+}
+
 /* Фильтры */
 
 /* Список карточек */
 
 /* Футер */
+
+.footer {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: var(--gray);
+}
+
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list__item {
+    display: flex;
+}
+
+.nav-list__item:not(:last-child) {
+    margin-right: 3.5rem;
+}
+
+.nav-list__link {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: #40393B;
+}
+
+/* Иконки соцсетей */
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social__item {
+    display: flex;
+}
+
+.social__item:not(:first-child) {
+    margin-left: 2.5rem;
+}
+
+.social__link {
+    width: 2rem;
+    height: 2rem;
+}
