@@ -14,39 +14,31 @@
 <body class="catalog">
     <header class="header">
         <div class="container">
-            <div class="header__wrap">
-                <nav class="site-nav">
-                    <a href="/" class="logo">
-                        <img class="logo__img" src="img/logo.svg" width="177" height="17" alt="Логотип магазина цветов «Floral Boutique»">
-                        <span class="visually-hidden">На главную</span>
-                    </a>
-                    <ul class="list nav-list">
-                        <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">Каталог</a>
-                        </li>  
-                        <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">Подписка</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">Отзывы</a>
-                        </li>
-                        <li class="nav-list__item">
-                            <a href="#" class="nav-list__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__group">
-                    <div class="contacts">
-                        <a class="phone" href="tel:+79239995566">+ 7 (923) 999 55 66</a>
-                    </div>
-                    <div class="user-nav">
-                        <a class="user-nav__item cart" href="#">
-                            <img class="button button--cart" width="24" height="24" src="img/icons/bag.svg" alt="">
-                            <span class="visually-hidden">Корзина</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <nav class="site-nav">
+                <a href="/" class="logo">
+                    <img class="logo__img" src="img/logo.svg" width="177" height="17" alt="Логотип магазина цветов «Floral Boutique»">
+                    <span class="visually-hidden">На главную</span>
+                </a>
+                <ul class="list nav-list">
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Каталог</a>
+                    </li>  
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Подписка</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Отзывы</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Контакты</a>
+                    </li>
+                </ul>
+                <a class="phone header__phone" href="tel:+79239995566">+ 7 (923) 999 55 66</a>
+                <a class="cart header__cart" href="#">
+                    <img class="button button--cart" width="24" height="24" src="img/icons/bag.svg" alt="">
+                    <span class="visually-hidden">Перейти в корзину</span>
+                </a>
+            </nav>
         </div>
     </header>
     <main class="main">
@@ -55,36 +47,41 @@
             <section class="hero">
                 <h1 class="hero__title">Каталог</h1>
             </section>
+            <!-- Фильтр -->
+            <section class="filter main__filter">
+                <h2 class="visually-hidden">Фильтры</h2>
+                <form class="form filter__form" action="#" method="get">
+                    <div class="form__group">
+                        <label class="visually-hidden" for="category">Сортировать по категориям</label>
+                        <select class="form__input form__input--select" name="category" id="category">
+                            <option disabled selected>Категория</option>
+                            <option value="1">Категория 1</option>
+                            <option value="2">Категория 2</option>
+                            <option value="3">Категория 3</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label class="visually-hidden" for="flowers">Сортировать по цветам</label>
+                        <select class="form__input form__input--select" name="flowers" id="flowers">
+                            <option disabled selected>Цветы</option>
+                            <option value="1">Цветок 1</option>
+                            <option value="2">Цветок 2</option>
+                            <option value="3">Цветок 3</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label class="visually-hidden" for="price">Сортировать по цене</label>
+                        <select class="form__input form__input--select" name="price" id="price">
+                            <option disabled selected>Цена</option>
+                            <option value="1">1000</option>
+                            <option value="2">2000</option>
+                            <option value="3">3000</option>
+                        </select>
+                    </div>
+                </form>
+            </section>
             <section class="products">
-                <!-- Фильтр -->
-                <div class="filter products__filter">
-                    <form class="form filter__form" action="#">
-                        <div class="form__group">
-                            <select class="form__input form__input--select" name="category" id="filter-category">
-                                <option disabled selected>Категория</option>
-                                <option value="1">Категория 1</option>
-                                <option value="2">Категория 2</option>
-                                <option value="3">Категория 3</option>
-                            </select>
-                        </div>
-                        <div class="form__group">
-                            <select class="form__input form__input--select" name="flowers" id="filter-flowers">
-                                <option disabled selected>Цветы</option>
-                                <option value="1">Цветок 1</option>
-                                <option value="2">Цветок 2</option>
-                                <option value="3">Цветок 3</option>
-                            </select>
-                        </div>
-                        <div class="form__group">
-                            <select class="form__input form__input--select" name="price" id="filter-price">
-                                <option disabled selected>Цена</option>
-                                <option value="1">1000</option>
-                                <option value="2">2000</option>
-                                <option value="3">3000</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
+                <h2 class="visually-hidden">Каталог цветов</h2>
                 <!-- Список карточек -->
                 <ul class="list products__list">
                     <!-- 1 - 3 -->
