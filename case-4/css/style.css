@@ -1,0 +1,25 @@
+
+/* Переменные */
+
+:root {
+    --bg: #F7F6F5;
+    --text-color: #211E1D;
+    --accent: #DEDBD9;
+}
+
+/* Базовые стили */
+
+html,
+body {
+    min-width: 144rem;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 10px;
+    line-height: 130%;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+    background-color: var(--bg);
+}
