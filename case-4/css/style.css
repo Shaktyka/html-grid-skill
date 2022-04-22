@@ -178,19 +178,59 @@ a {
 .filter__form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
+    column-gap: 2rem;
 }
 
 .filter .form__group {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    row-gap: 4rem;
+    row-gap: 3rem;
+}
+
+.form__input--select {
+    /* for Firefox */
+	-moz-appearance: none;
+	/* for Chrome */
+	-webkit-appearance: none;
+}
+
+.form__input--select::-ms-expand {
+	/* IE */
+	display: none;
+}
+
+.form__group::after {
+    position: absolute;
+    content: "";
+    bottom: 1.5rem;
+    right: 0;
+    background-image: url("../img/icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 1.2rem;
+    height: 0.8rem;
 }
 
 .form__label {
     font-size: 1.6rem;
     line-height: 130%;
+}
+
+.form__input {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.2rem;
+    background-color: transparent;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 130%;
+    color: rgba(33, 30, 29, 0.3);
+
+    border: none;
+    border-bottom: 0.1rem solid rgba(33, 30, 29, 0.2);
 }
 
 /* Каталог моделей */
