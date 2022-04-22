@@ -64,6 +64,15 @@ a {
 
 /* Кнопки */
 
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
 /* Сетки */
 
 .catalog {
@@ -143,10 +152,82 @@ a {
 .catalog__title {
     margin: 0;
     margin-bottom: 7rem;
-    
+
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 130%;
 }
 
+/* Фильтр */
 
+.main__filter {
+    margin-bottom: 6rem;
+}
+
+.filter__form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.form__group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 4rem;
+}
+
+.form__label {
+    font-size: 1.6rem;
+    line-height: 130%;
+}
+
+/* Каталог моделей */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    row-gap: 5rem;
+}
+
+/* Карточка */
+
+.card {
+    display: grid;
+    grid-template-rows: 40.8rem auto auto;
+}
+
+.card__img-wrap {
+    grid-row: 1 / 2;
+    max-width: 32rem;
+    width: 32rem;
+    min-height: 408px;
+}
+
+.card__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    margin-top: 2.2rem;
+    margin-bottom: 0.7rem;
+
+    font-size: 1.6rem;
+    line-height: 130%;
+    font-weight: 400;
+}
+
+.card__price {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 130%;
+    font-weight: 400;
+}
+
+/* Загрузить больше */
+
+.cards__more {
+    grid-column: span 4;
+}
