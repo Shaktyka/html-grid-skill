@@ -1,0 +1,93 @@
+/* Переменные */
+
+:root {
+    --bg: #ffffff;
+    --blue-bg: #F1F3FE;
+    --help-button-bg: #576BCC;
+    --act-button-bg: #FF8F0B;
+    --text-color: #3C425F;
+    --white: #ffffff;
+    --accent: #0BC4CF;
+    --light-text-color: #B4BEF0;
+}
+
+/* Базовые стили */
+
+html,
+body {
+    min-width: 144rem;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+    background-color: var(--bg);
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Сетки */
+
+.page {
+    /* grid-template-rows: [header] auto [main] 1fr [footer] auto; */
+}
+
+.container {
+    max-width: 134rem;
+    width: 134rem;
+    margin: 0 auto;
+}
+
+/* Кнопки */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    cursor: pointer;
+}
+
