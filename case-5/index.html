@@ -15,28 +15,28 @@
         <!-- Боковое меню -->
         <nav class="menu">
             <a href="/" class="logo">
-                <img class="logo__img" src="img/logo.svg" width="220" height="36" alt="Логотип языковой школы Let's Speak">
+                <img class="logo__img" src="img/logotype.svg" width="220" height="36" alt="Логотип языковой школы Let's Speak">
                 <span class="visually-hidden">На главную</span>
             </a>
             <ul class="list nav-list">
-                <li class="nav-list__item nav-list__item--active">
+                <li class="nav-list__item nav-list__item--cabinet nav-list__item--active">
                     <a href="#" class="nav-list__link">Кабинет ученика</a>
                 </li>  
-                <li class="nav-list__item">
+                <li class="nav-list__item nav-list__item--class">
                     <a href="#" class="nav-list__link">Учебный класс</a>
                 </li>
-                <li class="nav-list__item">
+                <li class="nav-list__item nav-list__item--textbook">
                     <a href="#" class="nav-list__link">Методичка</a>
                 </li>
-                <li class="nav-list__item">
+                <li class="nav-list__item nav-list__item--homework">
                     <a href="#" class="nav-list__link">Домашняя работа</a>
                 </li>
-                <li class="nav-list__item">
+                <li class="nav-list__item nav-list__item--exams">
                     <a href="#" class="nav-list__link">Экзамены</a>
                 </li>
             </ul>
             <a class="settings" href="#">
-                <img class="settings__pic" src="img/icons/settings.svg" alt="">
+                <img class="settings__pic" src="img/icons/settings-icon.svg" alt="">
                 Настройки
             </a>
         </nav>
@@ -61,17 +61,125 @@
                         </div>
                     </form>
                     <!-- Данные польз-ля -->
+                    <div class="user-menu__user user">
+                        <div class="user__img-wrap">
+                            <img class="img" src="img/avatar1.png" alt="Аватар пользователя 1">
+                        </div>
+                        <p class="user__name">Опознанный Енот</p>
+                        <button class="user__menu-button" type="button">
+                            <span class="visually-hidden">Меню пользователя</span>
+                        </button>
+                    </div>
                     <!-- Иконка уведомлений -->
                     <a class="user-menu__notifications notifications" href="#">
                         <div class="notifications__img-wrap">
                             <span class="notifications__amount">1</span>
-                            <img src="img/icons/not.svg" alt="">
+                            <img src="img/icons/notification.svg" alt="">
                         </div>
                         <span class="visually-hidden">Уведомления</span>
                     </a>
                 </div>
             </header>
-            <!-- Остальные компоненты -->
+
+            <!-- Слайдер -->
+            <section class="promo slider">
+                <button class="slider__button slider__button--prev" type="button">
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <ul class="slider__list">
+                    <li class="slider__item slide slide--active">
+                        <h3 class="slide__title">«Бифитер», «Кокни», «Даблдекер»...</h3>
+                        <p class="slide__description">
+                            Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне
+                        </p>
+                        <a class="button button--colored slide__link" href="#">Пройти тест ➞</a>
+                    </li>
+                    <li class="slider__item slide">
+                        <h3 class="slide__title">Заголовок слайда 2</h3>
+                        <p class="slide__description">
+                            Описание слайда 2
+                        </p>
+                        <a class="button button--colored slide__link" href="#">Попробовать ➞</a>
+                    </li>
+                </ul>
+                <button class="slider__button slider__button--next" type="button">
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </section>
+
+            <!-- Карточки -->
+            <div class="services">
+                <article class="service">
+                    <h3 class="service__title">Английский завтрак</h3>
+                    <p class="service__description">Разговорный клуб</p>
+                    <p class="service__time">10:00 — 11:00 (ПН—ПТ)</p>
+                    <a class="service__link" href="#">Записаться ➞</a>
+                </article>
+                <article class="service">
+                    <h3 class="service__title">Лето в Лондоне</h3>
+                    <p class="service__description">Месяц экскурсий и практики</p>
+                    <p class="service__time">10 июня — 3 июля</p>
+                    <a class="service__link" href="#">Отправиться ➞</a>
+                </article>
+                <article class="service">
+                    <h3 class="service__title">Надоел английский?</h3>
+                    <p class="service__description">С нами можно выучить и другие языки</p>
+                    <a class="service__link" href="#">Открыть список ➞</a>
+                </article>
+            </div>
+            
+            <!-- Видео -->
+            <div class="video">
+                <video class="video__track" src="#" width="540" height="300" poster="img/lesson.jpeg">
+                    Your browser does not support the video tag.
+                </video>
+                <button class="video__play-button" type="button">
+                    <span class="visually-hidden">Включить проигрывание</span>
+                </button>
+            </div>
+
+            <!-- Уроки курса -->
+            <section class="course">
+                <h2 class="course__title">Курс English A1</h2>
+                <ul class="course__list">
+                    <li class="course__item course">
+                        <a class="course__link" href="#">
+                            <span class="course__play-marker"></span>
+                            <h3 class="course__title">Урок 8</h3>
+                            <p class="course__name">Времена глаголов</p>
+                        </a>
+                    </li>
+                    <li class="course__item course course--active">
+                        <a class="course__link" href="#">
+                            <span class="course__play-marker"></span>
+                            <h3 class="course__title">Урок 9</h3>
+                            <p class="course__name">Неправильные глаголы</p>
+                        </a>
+                    </li>
+                    <li class="course__item course">
+                        <a class="course__link" href="#">
+                            <span class="course__play-marker"></span>
+                            <h3 class="course__title">Урок 10</h3>
+                            <p class="course__name">Present Simple</p>
+                        </a>
+                    </li>
+                    <li class="course__item course">
+                        <a class="course__link" href="#">
+                            <span class="course__play-marker"></span>
+                            <h3 class="course__title">Урок 11</h3>
+                            <p class="course__name">Past Simple</p>
+                        </a>
+                    </li>
+                    <li class="course__item course">
+                        <a class="course__link" href="#">
+                            <span class="course__play-marker"></span>
+                            <h3 class="course__title">Урок 12</h3>
+                            <p class="course__name">Articles</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
             <!-- Контакты -->
             <aside class="sidebar">
                 <div class="contacts">
