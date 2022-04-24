@@ -272,6 +272,81 @@ a {
     background-color: var(--white);
     box-shadow: 0px 1px 4px rgba(60, 66, 95, 0.2);
     border-radius: 0.4rem;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contacts__title-wrap {
+    padding-left: 3rem;
+}
+
+.contacts__title {
+    margin: 0;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+
+    border-bottom: 1px solid #E4E8FC;
+}
+
+.contacts__list {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.contact__link {
+    position: relative;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    column-gap: 1.2rem;
+    grid-template-rows: auto auto;
+
+    color: inherit;
+}
+
+.contacts__item:not(:last-child) {
+    margin-bottom: 1.6rem;
+}
+
+.contact__img-wrap {
+    position: relative;
+    grid-row: span 2;
+}
+
+.contact__status {
+    display: none;
+}
+
+.contact__status--online {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #0BC4CF;
+    border: 2px solid #ffffff;
+    border-radius: 5rem;
+}
+
+.contact__name {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.contact__lang {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    opacity: 0.5;
 }
 
 /* Футер */
