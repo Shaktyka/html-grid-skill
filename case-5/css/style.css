@@ -95,6 +95,80 @@ a {
     background-color: #F1F3FE;
 }
 
+/* Боковое меню */
+
+.menu {
+    width: 28rem;
+    padding-top: 2.4rem;
+    padding-bottom: 3rem;
+    background-color: var(--white);
+}
+
+.menu .logo {
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+}
+
+.nav-list {
+    position: relative;
+    min-height: 6rem;
+    padding-right: 3rem;
+}
+
+.nav-list__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1.2rem;
+    min-height: 6rem;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+.nav-list__marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+.nav-list__link {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.settings {
+    padding-left: 3rem;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.nav-list__item--active {
+    background-color: #F1F3FE;
+}
+
+.nav-list__item--active::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0.6rem;
+    height: 100%;
+    background-image: url("../img/icons/marker.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.nav-list__item--active path {
+    fill: #576BCC;
+    stroke: #576BCC;
+}
+
 /* Список услуг */
 
 .service {
