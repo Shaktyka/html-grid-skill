@@ -91,6 +91,20 @@ a {
     cursor: pointer;
 }
 
+.button--colored {
+    background-color: #FF8F0B;
+    padding: 1rem 2rem;
+
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: var(--white);
+
+    border-radius: 0.4rem;
+}
+
+/* Страница */
+
 .page__wrap {
     background-color: #F1F3FE;
 }
@@ -167,6 +181,139 @@ a {
 .nav-list__item--active path {
     fill: #576BCC;
     stroke: #576BCC;
+}
+
+/* Хедер */
+
+.header {
+    background-color: var(--white);
+    height: 8rem;
+}
+
+.user-menu {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    padding: 2rem 3rem;
+}
+
+.notifications {
+    display: flex;
+}
+
+.notifications__img-wrap {
+    position: relative;
+    display: flex;
+    width: 1.8rem;
+    height: 2rem;
+}
+
+.notifications__amount {
+    position: absolute;
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -1rem;
+    right: -0.8rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: #FF8F0B;
+
+    color: var(--white);
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: center;
+    border: 0.2rem solid var(--white);
+    border-radius: 5rem;
+}
+
+/* Слайдер */
+
+.promo {
+    width: 82rem;
+    min-height: 30rem;
+    border-radius: 0.4rem;
+    box-shadow: 0px 1px 4px rgba(60, 66, 95, 0.2);
+}
+
+.slider {
+    position: relative;
+    padding: 6rem;
+    background-color: #576BCC;
+    background-image: url("../img/bg.jpeg"), url("../img/bigben.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 50%, 70% 20%;
+    background-size: cover, 100%;
+    /* background-color: rgba(87, 107, 204, 0.5); */
+}
+
+.slider__list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slide {
+    display: none;
+    grid-template-rows: repeat(3, auto);
+    row-gap: 1rem;
+    color: #FFFFFF;
+}
+
+.slide--active {
+    display: grid;
+}
+
+.slide__title {
+    max-width: 49rem;
+    margin: 0;
+    
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 4.8rem;
+}
+
+.slide__description {
+    max-width: 48rem;
+    margin: 0;
+
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.slide__link {
+    justify-self: start;
+    margin-top: 1.4rem;
+}
+
+.slider__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--white);
+    width: 3.2rem;
+    height: 6.4rem;
+}
+
+.slider__button--prev {
+    left: 0;
+    justify-content: flex-start;
+    padding-left: 0.7rem;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+.slider__button--next {
+    right: 0;
+    justify-content: flex-end;
+    padding-right: 0.7rem;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.slider__button--next svg {
+    transform: rotateY(180deg);
 }
 
 /* Список услуг */
