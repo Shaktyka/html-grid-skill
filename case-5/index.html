@@ -76,16 +76,16 @@
                     <!-- Форма поиска -->
                     <form class="form user-menu__search search" action="#" method="get">
                         <div class="form__group">
+                            <button class="button button--icon search__button" type="submit">
+                                <img src="img/icons/search-icon.svg" alt="">
+                                <span class="visually-hidden">Кнопка запуска поиска</span>
+                            </button>
                             <label for="search" class="visually-hidden">Поиск по сайту</label>
                             <input 
                                 class="form__input form__search-input search__input" 
                                 name="search" id="search" 
                                 type="search" placeholder="Поиск ..."
                             >
-                            <button class="button button--icon search__button" type="submit">
-                                <img src="img/icons/search.svg" alt="">
-                                <span class="visually-hidden">Кнопка запуска поиска</span>
-                            </button>
                         </div>
                     </form>
                     <!-- Данные польз-ля -->
@@ -94,7 +94,10 @@
                             <img class="img" src="img/avatar1.png" alt="Аватар пользователя 1">
                         </div>
                         <p class="user__name">Опознанный Енот</p>
-                        <button class="user__menu-button" type="button">
+                        <button class="button user__menu-button" type="button">
+                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 6L0 0H12L6 6Z" fill="#576BCC"/>
+                            </svg>
                             <span class="visually-hidden">Меню пользователя</span>
                         </button>
                     </div>

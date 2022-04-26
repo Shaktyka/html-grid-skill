@@ -196,8 +196,40 @@ a {
     padding: 2rem 3rem;
 }
 
+.user {
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+}
+
+.user__img-wrap {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.2rem;
+}
+
+.user__name {
+    margin: 0;
+    margin-right: 1.5rem;
+
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.user__menu-button {
+    width: 2rem;
+    height: 2rem;
+}
+
+.user-menu__notifications {
+    padding-left: 3rem;
+    border-left: 0.1rem solid #E4E8FC;
+}
+
 .notifications {
     display: flex;
+    align-items: center;
 }
 
 .notifications__img-wrap {
