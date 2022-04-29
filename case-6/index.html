@@ -13,13 +13,167 @@
 </head>
 <body>
     <header class="header">
-
+        <div class="container">
+            <nav class="main__nav">
+                <ul class="list site-nav">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#">Место</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#">Каталог</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#">Оставить заявку</a>
+                    </li>
+                </ul>
+                <a href="/" class="logo">
+                    <img class="logo__img" src="img/logo.svg" width="97" height="30" alt="Логотип компании «Alt Home»">
+                    <span class="visually-hidden">На главную</span>
+                </a>
+                <div class="user-nav">
+                    <button class="button button--search user-nav__search-button" type="button">
+                        <img class="user-nav__search-img" src="img/icons/search-icon.svg" width="16" height="16">
+                        <span class="visually-hidden">Поиск</span>
+                    </button>
+                    <p class="auth">
+                        <a class="auth__login" href="#">Вход</a> или <a class="auth__sign-in" href="#">Регистрация</a>
+                    </p>
+                </div>
+            </nav>
+        </div>
     </header>
     <main class="main">
-
+        <h1 class="visually-hidden">Загородные дома в аренду от AltHome</h1>
+        <!-- Промо -->
+        <section class="module promo">
+            <div class="container">
+                <!-- Описание промо-блока -->
+                <div class="promo__description">
+                    <p class="promo__subheader">Санкт-Петербург</p>
+                    <h2 class="promo__header">Загородные дома в аренду</h2>
+                    <p class="promo__text">
+                        Отдохните от суеты мегаполиса в уютном тёплом доме в окружении экологически 
+                        чистых лесов, рек и озёр
+                    </p>
+                    <a class="button button--colored promo__link" href="#">Арендовать дом</a>
+                    <ul class="list social">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__icon" src="img/icons/fb-icon.svg" width="44" height="44">
+                                <span class="visually-hidden">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__icon" src="img/icons/in-icon.svg" width="44" height="44">
+                                <span class="visually-hidden">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__icon" src="img/icons/vk-icon.svg" width="44" height="44">
+                                <span class="visually-hidden">VKontakte</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Слайдер -->
+                <div class="promo__slider">
+                    <div class="slider">
+                        <ul class="list slider__list">
+                            <li class="slide slider__item slider__item--active">
+                                <img class="slide__img" src="img/promo.jpeg" width="795" height="496" alt="Слайд 1">
+                            </li>
+                            <li class="slide slider__item">
+                                <img class="slide__img" src="img/promo.jpeg" width="795" height="496" alt="Слайд 2">
+                            </li>
+                        </ul>
+                        <div class="slider__buttons">
+                            <button class="button slider__button slider__button--prev" type="button">
+                                <img class="social__icon" src="img/icons/arrow-right.svg" width="30" height="16">
+                                <span class="visually-hidden">Предыдущий слайд</span>
+                            </button>
+                            <button class="button slider__button slider__button--next" type="button">
+                                <img class="social__icon" src="img/icons/arrow-right.svg" width="30" height="16">
+                                <span class="visually-hidden">Следущий слайд</span>
+                            </button>
+                        </div>
+                        <p class="slider__counter">1/8</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Свяжемся с вами -->
+        <section class="module request">
+            <div class="container">
+                <div class="request__content">
+                    <form class="form request__form" action="#" method="post">
+                        <p class="module__subheader request__subheader"><span>03</span> Оставить заявку</p>
+                        <h2 class="module__title request__title">Мы свяжемся с вами</h2>
+                        <div class="form__group">
+                            <label class="form__label" for="appeal">Обращение</label>
+                            <select class="form__input form__select" name="appeal" id="appeal">
+                                <option value="1" class="form__option" selected>Мистер</option>
+                                <option value="2" class="form__option">Миссис</option>
+                                <option value="3" class="form__option">Мисс</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="name">Имя</label>
+                            <input class="form__input form__text" type="text" name="name" placeholder="Джон">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="surname">Фамилия</label>
+                            <input class="form__input form__text" type="text" name="surname" placeholder="Смит">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="email">E-mail</label>
+                            <input class="form__input form__text" type="email" name="email" placeholder="johnsmith@gmail.com">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="phone">Телефон</label>
+                            <input class="form__input form__text" type="tel" name="phone" placeholder="+7 999 999-99-99">
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input form__checkbox" type="checkbox" name="agreement">
+                            <label class="form__label" for="agreement">Согласие на обработку персональных данных</label>
+                        </div>
+                        <div class="form__group">
+                            <input class="form__input form__checkbox" type="checkbox" name="subscription" checked>
+                            <label class="form__label" for="subscription">Подписка на рассылку</label>
+                        </div>
+                        <button class="button button--colored form__button" type="submit">Отправить</button>
+                    </form>
+                    <div class="request__img-wrap">
+                        <img class="request__img" src="img/boat.jpeg" width="678" height="737" alt="Фото водоёма с лодкой сбоку">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
-
+        <div class="container">
+            <nav class="footer__nav">
+                <a href="/" class="logo">
+                    <img class="logo__img" src="img/logo.svg" width="97" height="30" alt="Логотип компании «Alt Home»">
+                    <span class="visually-hidden">На главную</span>
+                </a>
+                <ul class="list site-nav">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#">Место</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#">Каталог</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link" href="#">Оставить заявку</a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    © Сделано в <a class="copyright__link" href="#">HTML Academy</a>
+                </p>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
