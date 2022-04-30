@@ -316,8 +316,8 @@ a {
 .card {
     display: grid;
     grid-template-rows: 22rem 1fr;
-    width: 32.7rem;
-    max-width: 32.7rem;
+    /* width: 32.7rem;
+    max-width: 32.7rem; */
     min-height: 41.4rem;
 
     background-color: var(--white);
@@ -383,8 +383,20 @@ a {
     line-height: 3.6rem;
 }
 
-.catalog__card--wide {
+.catalog__card--wide__wrap {
+    grid-column: span 4;
+}
 
+/*
+.catalog__card--wide {
+    justify-self: center;
+    grid-template-columns: 32.7rem auto;
+    grid-template-rows: auto auto;
+}
+*/
+
+.catalog__card--wide__wrap .card {
+    width: 32.7rem
 }
 
 /* Форма заявки */
@@ -394,11 +406,145 @@ a {
     padding-bottom: 0;
 }
 
+.request__content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.request__img-wrap {
+    display: flex;
+}
+
 /* Форма */
 
 .request__form {
     padding-top: 10rem;
     padding-bottom: 10rem;
+    padding-right: 14rem;
+    padding-left: 11.5rem;
+}
+
+.request__subheader {
+    margin-bottom: 6rem;
+}
+
+.request__title {
+    margin-bottom: 2.4rem;
+}
+
+.form__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.4rem;
+    row-gap: 2rem;
+    grid-template-areas:
+        "appeal name surname"
+        "email email email"
+        "phone phone phone"
+        "checkboxes checkboxes checkboxes"
+        "submit submit .";
+}
+
+.appeal {
+    grid-area: appeal;
+    position: relative;
+}
+
+.name {
+    grid-area: name;
+}
+
+.surname {
+    grid-area: surname;
+}
+
+.email {
+    grid-area: email;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.checkboxes {
+    grid-area: checkboxes;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.submit {
+    grid-area: submit;
+}
+
+.form__group:not(.form__group--horizontal) {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.form__label {
+    margin-bottom: 0.4rem;
+
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.checkboxes .form__label {
+    line-height: 1.6rem;
+}
+
+.form__input {
+    width: 100%;
+    height: 4.4rem;
+    padding: 1.4rem 1.6rem 1.4rem;
+    background: var(--white);
+
+    color: inherit;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    border: 0.1rem solid #CFDCE3;
+}
+
+.form__select {
+    padding: 1rem 1.8rem 1.2rem  1.6rem;
+}
+
+.form__select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+.form__select::-ms-expand {
+	display: none;
+}
+
+.appeal::after {
+    position: absolute;
+    content: "";
+    top: 4.1rem;
+    right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("../img/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+::placeholder { 
+    color: rgb(51, 51, 51, 0.3);
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.form__group--horizontal {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1.2rem;
 }
 
 /* Футер */
