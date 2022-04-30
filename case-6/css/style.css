@@ -44,7 +44,7 @@ a {
     max-width: 100%;
     height: auto;
     -o-object-fit: contain;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .list {
@@ -170,6 +170,7 @@ a {
 
 .module__subheader {
     margin: 0;
+    margin-bottom: 6rem;
 
     font-weight: 300;
     color: #06A9B3;
@@ -265,6 +266,41 @@ a {
     display: block;
 }
 
+.slider__controls {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.controls__buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 21rem;
+    height: 6.4rem;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    background-color: var(--white);
+}
+
+.slider__button--prev {
+    border-right: 0.2rem solid #EAF2F6;
+}
+
+.slider__button--prev svg {
+    transform: rotateY(180deg);
+}
+
+.slider__button--inactive path {
+    stroke: #EAF2F6;
+}
+
+.slider__pager {
+    justify-self: end;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 4.8rem;  
+}
+
 /* Статья */
 
 .article__text {
@@ -294,10 +330,6 @@ a {
 .catalog {
     padding-bottom: 14rem;
     background-color: #F2F8FB;
-}
-
-.catalog__subheader {
-    margin-bottom: 6rem;
 }
 
 .catalog__title {
