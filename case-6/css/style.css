@@ -304,32 +304,40 @@ a {
     margin-bottom: 4rem;
 }
 
+.catalog__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2.4rem;
+    row-gap: 2.4rem;
+}
+
 /* Карточка дома */
 
-.house {
+.card {
+    display: grid;
+    grid-template-rows: 22rem 1fr;
     width: 32.7rem;
     max-width: 32.7rem;
-    min-height: 42.4rem;
+    min-height: 41.4rem;
 
     background-color: var(--white);
     border: 0.1rem solid #CFDCE3;
 }
 
-.house__img-wrap {
-    display: flex;
-    max-width: 32.7rem;
-    min-height: 22rem;
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.house__img {
-    width: 32.7rem;
-}
-
-.house__content {
+.card__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
     padding: 1.6rem 2.4rem 2.4rem;
 }
 
-.house__title {
+.card__title {
     margin: 0;
     margin-bottom: 0.8rem;
 
@@ -338,7 +346,7 @@ a {
     line-height: 3.4rem;
 }
 
-.house__area {
+.card__area {
     margin: 0;
 
     font-size: 1.6rem;
@@ -346,7 +354,8 @@ a {
     opacity: 0.3;
 }
 
-.house__characteristics {
+.card__stats {
+    grid-row: start 2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
@@ -359,19 +368,23 @@ a {
     border-top: 0.2rem solid #EAF2F6;
 }
 
-.house__characteristics dt {
+.card__stats dt {
     margin: 0;
     padding: 0;
     font-size: 1.6rem;
     line-height: 2rem;
 }
 
-.house__characteristics dd {
+.card__stats dd {
     grid-row: 1 / 2;
     margin: 0;
     padding: 0;
     font-size: 3.2rem;
     line-height: 3.6rem;
+}
+
+.catalog__card--wide {
+
 }
 
 /* Форма заявки */
