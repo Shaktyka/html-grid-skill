@@ -88,3 +88,155 @@ a {
     cursor: pointer;
 }
 
+.button--colored {
+    background-color: var(--green);
+    padding: 1.6rem 3.2rem;
+
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+/* Хедер */
+
+.header {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: #F2F8FB;
+}
+
+.main__nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-nav__item:not(:last-child) {
+    margin-right: 6.4rem;
+}
+
+.site-nav__link {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #06A9B3;
+}
+
+.logo {
+    /* display: flex; */
+    width: 9.7rem;
+    height: 3rem;
+}
+
+.user-nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-self: end;
+    column-gap: 6.4rem;
+}
+
+.auth {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    align-self: center;
+}
+
+.auth a {
+    color: #06A9B3;
+}
+
+/* Стили модуля */
+
+.module__title {
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    text-align: left;
+}
+
+/* Промо */
+
+/* Промо Инфо */
+
+.promo {
+    padding-bottom: 10rem;
+    background-color: #F2F8FB;
+}
+
+.promo__description {
+    max-width: 68rem;
+    padding-top: 8rem;
+}
+
+.promo__subheader {
+    margin: 0;
+    margin-bottom: 0.8rem;
+
+    font-size: 1.6rem;
+    line-height: 2rem;
+    opacity: 0.3;
+}
+
+.promo__header {
+    margin-bottom: 1.2rem;
+
+    font-size: 4.4rem;
+    line-height: 6.2rem;
+}
+
+.promo__text {
+    margin: 0;
+    margin-bottom: 4rem;
+
+    font-size: 2.2rem;
+    line-height: 3.4rem;
+}
+
+.promo__link {
+    display: inline-block;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 7.3rem;
+}
+
+.promo .social {
+    margin-top: 10rem;
+}
+
+/* Промо слайдер */
+
+.promo__slider {
+
+}
+
+.slider {
+    position: relative;
+}
+
+.slider__item {
+    display: none;
+}
+
+.slider__item--active {
+    display: block;
+}
+
+/* Статья */
+
+/* Форма заявки */
+
+/* Футер */
