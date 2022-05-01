@@ -103,7 +103,7 @@ a {
 .header {
     padding-top: 2rem;
     padding-bottom: 3rem;
-    background-color: #F2F8FB;
+    background-color: var(--ll-gray);
 }
 
 .main__nav {
@@ -125,7 +125,7 @@ a {
     display: flex;
     font-size: 1.6rem;
     line-height: 2rem;
-    color: #06A9B3;
+    color: var(--green);
 }
 
 .logo {
@@ -150,7 +150,7 @@ a {
 }
 
 .auth a {
-    color: #06A9B3;
+    color: var(--green);
 }
 
 /* Стили модуля */
@@ -174,7 +174,7 @@ a {
     margin-bottom: 6rem;
 
     font-weight: 300;
-    color: #06A9B3;
+    color: var(--green);
     font-size: 1.6rem;
     line-height: 2rem;
 }
@@ -191,7 +191,7 @@ a {
     right: 0.8rem;
     width: 8.1rem;
     height: 0.1rem;
-    background-color: #06A9B3;
+    background-color: var(--green);
 }
 
 /* Промо */
@@ -200,7 +200,7 @@ a {
 
 .promo {
     padding-top: 0;
-    background-color: #F2F8FB;
+    background-color: var(--ll-gray);
 }
 
 .promo__description {
@@ -283,7 +283,7 @@ a {
 }
 
 .slider__button--prev {
-    border-right: 0.2rem solid #EAF2F6;
+    border-right: 0.2rem solid var(--ll-gray);
 }
 
 .slider__button--prev svg {
@@ -291,7 +291,7 @@ a {
 }
 
 .slider__button--inactive path {
-    stroke: #EAF2F6;
+    stroke: var(--ll-gray);
 }
 
 .slider__pager {
@@ -392,7 +392,7 @@ a {
 
 .catalog {
     padding-bottom: 14rem;
-    background-color: #F2F8FB;
+    background-color: var(--ll-gray);
 }
 
 .catalog__title {
@@ -416,7 +416,7 @@ a {
     min-height: 41.4rem;
 
     background-color: var(--white);
-    border: 0.1rem solid #CFDCE3;
+    border: 0.1rem solid var(--l-gray);
 }
 
 .card__img {
@@ -460,7 +460,7 @@ a {
     padding-top: 1.6rem;
     font-weight: 300;
 
-    border-top: 0.2rem solid #EAF2F6;
+    border-top: 0.2rem solid var(--ll-gray);
 }
 
 .card__stats dt {
@@ -602,7 +602,7 @@ a {
     font-size: 1.6rem;
     line-height: 2rem;
 
-    border: 0.1rem solid #CFDCE3;
+    border: 0.1rem solid var(--l-gray);
 }
 
 .form__select {
@@ -646,7 +646,7 @@ a {
 
 .footer {
     padding-top: 3rem;
-    background-color: #F2F8FB;
+    background-color: var(--ll-gray);
     padding-bottom: 4rem;
 }
 
@@ -668,5 +668,5 @@ a {
 }
 
 .copyright__link {
-    color: #06A9B3;
+    color: var(--green);
 }
