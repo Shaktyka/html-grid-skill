@@ -310,6 +310,7 @@ a {
 }
 
 .article__content {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 44.4rem 1fr;
     column-gap: 2.4rem;
@@ -318,7 +319,29 @@ a {
 
 .article__content > * {
     grid-column: 2;
-  }
+}
+
+.article__deco {
+    position: absolute;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    color: #EAF2F6;
+}
+
+.article__deco-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.article__deco-number {
+    margin-bottom: 4rem;
+}
 
 .article__text {
     max-width: 44.4rem;
