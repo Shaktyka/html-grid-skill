@@ -1,0 +1,87 @@
+/* Переменные */
+
+:root {
+    --bg: #EEE9E6;
+    --text-color: #695A59;
+    --white: #ffffff;
+    --text-bg: #EAE1DC;
+    --dark-gray: #343235;
+    --text-light: #FBF3F0;
+}
+
+/* Базовые стили */
+
+html,
+body {
+    width: 136.6rem;
+    max-width: 136.6rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    line-height: 32px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--text-color);
+    background-color: var(--bg);
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: cover;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Сетки */
+
+.container {
+    max-width: 116.6rem;
+    width: 116.6rem;
+    margin: 0 auto;
+}
+
+/* Кнопки */
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    cursor: pointer;
+}
