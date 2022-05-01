@@ -375,7 +375,39 @@
         <section class="request">
             <div class="container">
                 <div class="request__content">
-                    
+                    <form class="form request__form" action="#" method="post">
+                        <h2 class="module__title request__title">Мы всегда рады общению</h2>
+                        <p class="request__text">
+                            Оставьте свои контакты. Менеджер перезвонит в удобное вам время 
+                            и ответит на все вопросы.
+                        </p>
+                        <div class="form__group name">
+                            <label class="visually-hidden" for="name">Имя</label>
+                            <input class="form__input form__text" type="text" id="name" name="name" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__group phone">
+                            <label class="visually-hidden" for="phone">Телефон</label>
+                            <input class="form__input form__text" type="tel" id="phone" name="phone" placeholder="Введите телефон">
+                        </div>
+                        <div class="form__group agreement">
+                            <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" checked>
+                            <label class="form__label" for="agreement">Согласие на обработку персональных данных</label>
+                        </div>
+                        <div class="form__group time">
+                            <label class="visually-hidden" for="time">Удобное время</label>
+                            <select class="form__input form__select" name="time" id="time">
+                                <option value="1" class="form__option">Удобное время</option>
+                                <option value="2" class="form__option">10-13</option>
+                                <option value="3" class="form__option">14-18</option>
+                            </select>
+                        </div>
+                        <div class="submit">
+                            <button class="button button--bordered form__button" type="submit">Оставить заявку</button>
+                        </div>
+                    </form>
+                    <div class="request__map-wrap">
+                        <img class="request__img" src="img/map.png" width="474" height="734" alt="Карта расположения студии">
+                    </div>
                 </div>
             </div>
         </section>
