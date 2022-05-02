@@ -85,3 +85,99 @@ a {
 
     cursor: pointer;
 }
+
+/* Хедер */
+
+.header__content {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    color: #695A59;
+}
+
+.main__nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 21.8rem;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: 14.1rem auto;
+    column-gap: 1.2rem;
+    align-items: center;
+}
+
+.logo__img {
+    display: flex;
+    width: 14.1rem;
+    height: 5.2rem;
+}
+
+.logo__text {
+    max-width: 22.2rem;
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.header__wrap {
+    display: grid;
+    grid-template-columns: auto auto 3.6rem;
+    column-gap: 2.4rem;
+    align-items: center;
+}
+
+.phone {
+    display: grid;
+    grid-template-columns: 1.8rem auto;
+    column-gap: 1rem;
+
+    max-width: 17.4rem;
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.phone__icon {
+    grid-row: span 2;
+
+    position: relative;
+    top: 5px;
+    
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.phone a {
+    color: inherit;
+}
+
+.phone__modal {
+    text-decoration: underline;
+}
+
+.address {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1.2rem;
+
+    max-width: 27.2rem;
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.address__icon {
+    position: relative;
+    top: 5px;
+}
+
+.address a {
+    color: inherit;
+}
+
+.header__menu-button {
+    width: 3.6rem;
+    height: 3.2rem;
+    margin-left: 4.3rem;
+}
