@@ -129,6 +129,26 @@ a {
     text-transform: uppercase;
 }
 
+.module__title--light {
+    color: #EEE9E6;
+}
+
+.module__text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+}
+
+.module__text--light {
+    color: #FBF3F0;
+}
+
+.module__text--grey {
+    color: #EEE9E6;
+    opacity: 0.6;
+}
+
 /* Хедер */
 
 .header__content {
@@ -254,16 +274,6 @@ a {
 
 .promo__title {
     margin-bottom: 1.6rem;
-    color: #EEE9E6;
-}
-
-.promo__text {
-    margin: 0;
-    font-weight: 500;
-    font-size: 1.8rem;
-    line-height: 3.2rem;
-    color: #EEE9E6;
-    opacity: 0.6;
 }
 
 .promo__link {
@@ -282,12 +292,6 @@ a {
 
 .about__title {
     margin-bottom: 5rem;
-}
-
-.about__text {
-    margin: 0;
-    font-size: 1.8rem;
-    line-height: 3.2rem;
 }
 
 .about__aside figure {
@@ -327,6 +331,11 @@ a {
 .about__image {
     margin: 0;
     padding: 0;
+}
+
+.about__image a {
+    color: inherit;
+    text-decoration: underline;
 }
 
 /* Продукты */
@@ -473,19 +482,10 @@ a {
 .team__title {
     /* max-width: 57.3rem; */
     margin-bottom: 4.6rem;
-    color: #EEE9E6;
 }
 
 .team__description {
     margin-bottom: 4rem;
-}
-
-.team__text {
-    margin: 0;
-    color: #FBF3F0;
-    font-size: 1.8rem;
-    line-height: 3.2rem;
-    font-weight: 500;
 }
 
 .team__aside {
@@ -504,6 +504,7 @@ a {
 
 .collections {
     padding-top: 12rem;
+    padding-bottom: 12rem;
 }
 
 .collections__title {
@@ -515,6 +516,10 @@ a {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 3.2rem;
+}
+
+.collection__item {
+    display: flex;
 }
 
 /* Заявка */
@@ -537,18 +542,6 @@ a {
 .request__form {
     padding-top: 9.2rem;
     padding-bottom: 8rem;
-}
-
-.request__title {
-    color: #EEE9E6;
-}
-
-.request__text {
-    margin: 0;
-    color: #EEE9E6;
-    font-size: 1.8rem;
-    line-height: 3.2rem;
-    opacity: 0.6;
 }
 
 .request .form__button {
