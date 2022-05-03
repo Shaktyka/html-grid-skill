@@ -381,3 +381,176 @@ a {
     line-height: 2rem;
     opacity: 0.6;
 }
+
+/* Проекты */
+
+.projects {
+    padding-bottom: 12rem;
+}
+
+.projects__title {
+    max-width: 44.8rem;
+    margin-bottom: 4.4rem;
+    padding-left: 10rem;
+}
+
+.slider {
+    display: grid;
+    grid-template-columns: 10rem 1fr 10rem;
+}
+
+.slide {
+    display: none;
+    margin-bottom: -100px;
+}
+
+.slide--active {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.slide__description {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    position: relative;
+    top: -100px;
+
+    padding: 3.2rem 3.6rem;
+    background-color: rgba(52, 50, 53, 0.9);
+}
+
+.slide__title {
+    margin: 0;
+
+    color: #F5F2ED;
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+}
+
+.slide__link {
+    justify-self: end;
+    color: #F5F2ED;
+}
+
+.slider__control {
+    align-self: center;
+    width: 7.2rem;
+    height: 7.2rem;
+    background-color: #343235;
+    border-radius: 5rem;
+}
+
+.slider__control--prev {
+    justify-self: start;
+    transform: rotate(180deg);
+}
+
+.slider__control--next {
+    justify-self: end;
+}
+
+/* Миссия */
+
+.mission {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    background-color: #343235;
+}
+
+/* Команда */
+
+.team {
+    padding-bottom: 12rem;
+    background-color: #343235;
+}
+
+.team__title {
+    /* max-width: 57.3rem; */
+    margin-bottom: 4.6rem;
+    color: #EEE9E6;
+}
+
+.team__description {
+    margin-bottom: 4rem;
+}
+
+.team__text {
+    margin: 0;
+    color: #FBF3F0;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    font-weight: 500;
+}
+
+.team__aside {
+    margin: 0;
+    color: #FBF3F0;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.team__img {
+    display: flex;
+    margin: 0;
+}
+
+/* Метеморфозы */
+
+.collections {
+    padding-top: 12rem;
+}
+
+.collections__title {
+    margin-bottom: 5.4rem;
+}
+
+.collections__text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+}
+
+/* Заявка */
+
+.request {
+    background: rgba(52, 50, 53, 0.9);
+    background-image: url("../img/promo-bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.request__content {
+    display: grid;
+    grid-template-columns: 1fr 47.4rem;
+    column-gap: 12rem;
+    padding-left: 10rem;
+}
+
+.request__form {
+    padding-top: 9.2rem;
+    padding-bottom: 8rem;
+}
+
+.request__title {
+    color: #EEE9E6;
+}
+
+.request__text {
+    margin: 0;
+    color: #EEE9E6;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    opacity: 0.6;
+}
+
+.request .form__button {
+    width: 100%;
+}
