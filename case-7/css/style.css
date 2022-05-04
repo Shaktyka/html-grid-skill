@@ -118,6 +118,10 @@ a {
 
 /* Стили модуля */
 
+.module {
+    position: relative;
+}
+
 .module__title {
     position: relative;
     margin: 0;
@@ -127,10 +131,28 @@ a {
     font-size: 4.2rem;
     line-height: 5.4rem;
     text-transform: uppercase;
+
+    z-index: 1;
 }
 
 .module__title--light {
     color: #EEE9E6;
+}
+
+.module__title.module__title--withtext::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: #EAE1DC;
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 11rem;
+    text-transform: uppercase;
+
+    z-index: -1;
 }
 
 .module__text {
@@ -292,6 +314,10 @@ a {
 
 .about__title {
     margin-bottom: 5rem;
+}
+
+.module__title.about__title::before {
+    content: "About us";
 }
 
 .about__aside figure {
