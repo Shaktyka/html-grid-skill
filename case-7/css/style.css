@@ -374,6 +374,10 @@ a {
     margin-bottom: 4.4rem;
 }
 
+.module__title--withtext.products__title::before {
+    content: "The best";
+}
+
 .products__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -427,6 +431,10 @@ a {
     max-width: 44.8rem;
     margin-bottom: 4.4rem;
     padding-left: 10rem;
+}
+
+.module__title--withtext.projects__title::before {
+    content: "Projects";
 }
 
 .slider {
@@ -498,6 +506,11 @@ a {
     background-color: #343235;
 }
 
+.module__title--withtext.mission__title::before {
+    content: "Mission";
+    color: rgba(154, 133, 132, 0.1);
+}
+
 /* Команда */
 
 .team {
@@ -508,6 +521,11 @@ a {
 .team__title {
     /* max-width: 57.3rem; */
     margin-bottom: 4.6rem;
+}
+
+.module__title--withtext.team__title::before {
+    content: "Our team";
+    color: rgba(154, 133, 132, 0.1);
 }
 
 .team__description {
@@ -537,6 +555,10 @@ a {
     margin-bottom: 5.4rem;
 }
 
+.module__title--withtext.collections__title::before {
+    content: "Collecttions";
+}
+
 .collections__text {
     margin: 0;
     font-weight: 500;
@@ -563,6 +585,11 @@ a {
     grid-template-columns: 1fr 47.4rem;
     column-gap: 12rem;
     padding-left: 10rem;
+}
+
+.module__title--withtext.request__title::before {
+    content: "Talk";
+    color: rgba(154, 133, 132, 0.1);
 }
 
 .request__form {
