@@ -116,6 +116,13 @@ a {
     margin-left: 1.6rem;
 }
 
+.button--play {
+    width: 9.7rem;
+    height: 9.7rem;
+    background-color: #343235;
+    border-radius: 5rem;
+}
+
 /* Стили модуля */
 
 .module {
@@ -509,6 +516,29 @@ a {
 .module__title--withtext.mission__title::before {
     content: "Mission";
     color: rgba(154, 133, 132, 0.1);
+}
+
+.mission__video-wrap {
+    position: relative;
+    display: flex;
+    max-width: 57.3rem;
+    max-height: 59.8rem;
+}
+
+.mission__video {
+    width: 57.3rem;
+    height: 59.8rem;
+}
+
+.mission__play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mission__img {
+    display: flex;
 }
 
 /* Команда */
